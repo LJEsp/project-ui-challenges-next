@@ -16184,72 +16184,19 @@ var index = function index() {
       lineNumber: 29
     },
     __self: this
-  }, "Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "apple-touch-icon",
-    sizes: "180x180",
-    href: "/apple-touch-icon.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "icon",
-    type: "image/png",
-    sizes: "32x32",
-    href: "/favicon-32x32.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "icon",
-    type: "image/png",
-    sizes: "16x16",
-    href: "/favicon-16x16.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "manifest",
-    href: "/site.webmanifest",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-    name: "msapplication-TileColor",
-    content: "#da532c",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-    name: "theme-color",
-    content: "#ffffff",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  })), links.map(function (link) {
+  }, "Test")), links.map(function (link) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       key: link.href,
       href: link.href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 33
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 34
       },
       __self: this
     }, link.title));
@@ -16262,7 +16209,7 @@ var index = function index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 38
     },
     __self: this
   }, function (props) {
@@ -16270,7 +16217,7 @@ var index = function index() {
       style: props,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 39
       },
       __self: this
     }, "Test");
