@@ -11,11 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/challenges/017-email-receipt": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/challenges/017-email-receipt": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
