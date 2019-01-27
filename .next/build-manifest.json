@@ -3,28 +3,28 @@
   "pages": {
     "/challenges/017-email-receipt": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.62007c8f0b565654d903.js",
-      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+      "static/chunks/commons.8ff8ee9e02dab714f95c.js",
+      "static/runtime/main-f3b0b9a6604c179e2c3c.js"
     ],
     "/index": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.62007c8f0b565654d903.js",
-      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+      "static/chunks/commons.8ff8ee9e02dab714f95c.js",
+      "static/runtime/main-f3b0b9a6604c179e2c3c.js"
     ],
     "/_app": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.62007c8f0b565654d903.js",
-      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+      "static/chunks/commons.8ff8ee9e02dab714f95c.js",
+      "static/runtime/main-f3b0b9a6604c179e2c3c.js"
     ],
     "/_error": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.62007c8f0b565654d903.js",
-      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+      "static/chunks/commons.8ff8ee9e02dab714f95c.js",
+      "static/runtime/main-f3b0b9a6604c179e2c3c.js"
     ],
     "/": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.62007c8f0b565654d903.js",
-      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+      "static/chunks/commons.8ff8ee9e02dab714f95c.js",
+      "static/runtime/main-f3b0b9a6604c179e2c3c.js"
     ]
   }
 }
