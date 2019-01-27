@@ -1,27 +1,30 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_0a5735af42686c2a38b2.js"
-  ],
+  "devFiles": [],
   "pages": {
-    "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/challenges/017-email-receipt": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.62007c8f0b565654d903.js",
+      "static/runtime/main-54f6a3ec37b010feb6cd.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.62007c8f0b565654d903.js",
+      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.62007c8f0b565654d903.js",
+      "static/runtime/main-54f6a3ec37b010feb6cd.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.62007c8f0b565654d903.js",
+      "static/runtime/main-54f6a3ec37b010feb6cd.js"
     ],
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.62007c8f0b565654d903.js",
+      "static/runtime/main-54f6a3ec37b010feb6cd.js"
     ]
   }
 }

@@ -30,7 +30,7 @@ const PageStyle = createGlobalStyle`
 `;
 
 const StyledWrapper = styled.div`
-  h1 {  
+  h1 {
     font-size: 3em;
     margin-bottom: 1em;
   }
@@ -44,7 +44,7 @@ const StyledWrapper = styled.div`
   }
 
   a {
-    color: #2196F3;
+    color: #2196f3;
   }
 `;
 
@@ -52,7 +52,7 @@ const index = () => {
   return (
     <StyledWrapper>
       <Head>
-        <title>Test</title>
+        <title>UI Challenges | LJEsp</title>
         <link
           href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
           rel="stylesheet"

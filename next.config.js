@@ -1,7 +1,10 @@
 module.exports = {
   exportPathMap: function() {
     return {
-      "/": { page: "/" }
+      "/": { page: "/" },
+      "/challenges/017-email-receipt/": {
+        page: "/challenges/017-email-receipt/index.js"
+      }
     };
   }
 };
