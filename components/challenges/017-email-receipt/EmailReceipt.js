@@ -18,7 +18,10 @@ const theme = {
     l: "2em", // 32
     xl: "4em" // 64
   },
-  em: px => `${px / 16}em`
+  em: px => `${px / 16}em`,
+  breakpoint: {
+    first: "37.5rem"
+  }
 };
 
 const PageStyle = createGlobalStyle`
@@ -28,29 +31,38 @@ const PageStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-size: 16px;
+
+    @media (max-width: ${theme.breakpoint.first}) {
+      font-size: 15px;
+    }
   }
 
   body {
     font-family: "Montserrat", sans-serif;
     color: ${theme.color.dark};
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: ${theme.breakpoint.first}) {
+      align-items: flex-start;
+      padding: ${theme.size.m}
+    }
   }
 `;
 
 const StyledEmailReceipt = styled.div`
   /* border: 1px solid cyan; */
   margin-bottom: ${theme.em(110)};
-  width: ${theme.em(464)};
+  max-width: ${theme.em(464)};
   position: relative;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 
   .container {
     /* border: 1px solid magenta; */
-    width: ${theme.em(448)};
+    /* width: ${theme.em(448)}; */
     transform: skewY(12deg);
     transform-origin: top left;
     padding-top: ${theme.size.xl};
@@ -63,6 +75,12 @@ const StyledEmailReceipt = styled.div`
     );
     box-shadow: 0.3em 0.6em 3em rgba(0, 0, 0, 0.2);
 
+    @media (max-width: ${theme.breakpoint.first}) {
+      padding-left: ${theme.em(24)};
+      padding-top: ${theme.em(72)};
+      padding-bottom: ${theme.size.m};
+    }
+
     > * {
       transform: skewY(-12deg);
       transform-origin: top left;
@@ -73,13 +91,29 @@ const StyledEmailReceipt = styled.div`
     display: flex;
     margin-bottom: ${theme.size.m};
 
+    @media (max-width: ${theme.breakpoint.first}) {
+      flex-flow: column;
+    }
+
     &__logo {
       margin-right: ${theme.size.l};
+
+      @media (max-width: ${theme.breakpoint.first}) {
+        align-self: center;
+        margin-right: 0;
+      }
     }
 
     &__detail-box {
       /* border: 1px solid orange; */
       align-self: flex-end;
+
+      @media (max-width: ${theme.breakpoint.first}) {
+        align-self: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
     }
   }
 
@@ -101,12 +135,23 @@ const StyledEmailReceipt = styled.div`
 
   .text-box {
     /* border: 1px solid magenta; */
-    height: ${theme.size.l};
+    /* height: ${theme.size.l}; */
+    padding-top: ${theme.size.m};
     display: flex;
+    flex-flow: row wrap;
     align-items: flex-end;
+
+    &--center {
+      justify-content: center;
+    }
 
     &--right {
       justify-content: flex-end;
+      text-align: center;
+
+      @media (max-width: ${theme.breakpoint.first}) {
+        justify-content: center;
+      }   
     }
   }
 
@@ -141,6 +186,13 @@ const StyledEmailReceipt = styled.div`
     grid-column-gap: ${theme.size.m};
     justify-items: start;
     margin-bottom: ${theme.size.m};
+
+    @media (max-width: ${theme.breakpoint.first}) {
+      grid-template-columns: 4fr 1fr 1fr;
+      grid-column-gap: ${theme.size.s};
+      grid-row-gap: ${theme.size.m};
+      margin-bottom: ${theme.size.l};
+    }
   }
 
   .product {
@@ -149,6 +201,12 @@ const StyledEmailReceipt = styled.div`
     border: ${theme.em(1)} solid ${theme.color.white};
     border-radius: 1000em;
     overflow: hidden;
+
+    @media (max-width: ${theme.breakpoint.first}) {
+      grid-column: 1 / -1;
+      justify-self: center;
+      
+    }
 
     &__image {
       /* border: 1px solid magenta; */
@@ -163,6 +221,10 @@ const StyledEmailReceipt = styled.div`
     justify-content: flex-end;
     margin-bottom: ${theme.size.m};
 
+    @media (max-width: ${theme.breakpoint.first}) {
+       justify-content: center;
+    }
+
     div:first-child {
       margin-right: ${theme.size.m};
     }
@@ -172,11 +234,16 @@ const StyledEmailReceipt = styled.div`
     width: 100%;
     height: ${theme.em(1)};
     background-color: ${theme.color.dark};
+
   }
 
   .button-box {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: ${theme.breakpoint.first}) {
+       justify-content: center;
+    }
   }
 
   .button {
@@ -202,13 +269,19 @@ const StyledEmailReceipt = styled.div`
   .design-outline {
     position: absolute;
     top: ${theme.size.m};
-    right: 0;
+    right: calc(${theme.size.m} * -1);
     bottom: calc(${theme.size.m} * -1);
     left: ${theme.size.m};
     border: ${theme.em(2)} solid ${theme.color.white};
     transform: skewY(12deg);
     transform-origin: top left;
     pointer-events: none;
+
+    @media (max-width: ${theme.breakpoint.first}) {
+      top: ${theme.size.m};
+      left: ${theme.size.s};
+      right: ${theme.size.s};
+    }
   }
 
   .design-back-plate {
@@ -221,7 +294,6 @@ const StyledEmailReceipt = styled.div`
     background-color: ${theme.color.dark};
     border-radius: ${theme.size.s};
     transform: scaleX(-1) skewY(12deg);
-    /* transform-origin: ; */
     z-index: -1;
   }
 
@@ -233,6 +305,8 @@ const StyledEmailReceipt = styled.div`
     position: absolute;
     top: ${theme.em(28)};
     right: ${theme.em(40)};
+
+    
   }
 
   .design-circle-fill {
@@ -240,7 +314,8 @@ const StyledEmailReceipt = styled.div`
     width: ${theme.size.m};
     height: ${theme.size.m};
     position: absolute;
-    left: ${theme.em(216)};
+    /* left: ${theme.em(216)}; */
+    left: calc(50% - ${theme.size.m} / 2);
     bottom: ${theme.size.m};
     border-radius: 1000em;
     margin-bottom: calc(${theme.em(110)} * -1);
@@ -318,7 +393,7 @@ const EmailReceipt = () => {
                   <span className="text text--data">01/25/19</span>
                 </div>
 
-                <div className="text-box">
+                <div className="text-box text-box--center">
                   <span className="text text--uppercase">
                     Order Number:&nbsp;
                   </span>
@@ -354,14 +429,12 @@ const EmailReceipt = () => {
             </div>
 
             <div className="product-box">
-              <div>
-                <div className="product">
-                  <img
-                    className="product__image"
-                    src="/static/017-email-receipt/product-02.jpg"
-                    alt=""
-                  />
-                </div>
+              <div className="product">
+                <img
+                  className="product__image"
+                  src="/static/017-email-receipt/product-02.jpg"
+                  alt=""
+                />
               </div>
 
               <div>
@@ -383,7 +456,7 @@ const EmailReceipt = () => {
               </div>
 
               <div>
-                <span className="text text">$2046</span>
+                <span className="text">$2046</span>
               </div>
             </div>
 
