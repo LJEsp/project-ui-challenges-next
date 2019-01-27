@@ -32,8 +32,10 @@ const PageStyle = createGlobalStyle`
     height: 100%;
     font-size: 16px;
 
-    @media (max-width: ${theme.breakpoint.first}) {
+    ${
+      "" /* @media (max-width: ${theme.breakpoint.first}) {
       font-size: 15px;
+    } */
     }
   }
 
@@ -58,7 +60,11 @@ const StyledEmailReceipt = styled.div`
   margin-bottom: ${theme.em(110)};
   max-width: ${theme.em(464)};
   position: relative;
-  /* font-size: 1.2rem; */
+  font-size: 1.1875rem;
+
+  @media (max-width: ${theme.breakpoint.first}) {
+    font-size: 0.9375em;
+  }
 
   .container {
     /* border: 1px solid magenta; */
@@ -93,6 +99,8 @@ const StyledEmailReceipt = styled.div`
 
     @media (max-width: ${theme.breakpoint.first}) {
       flex-flow: column;
+      margin-bottom: ${theme.size.s};
+
     }
 
     &__logo {
@@ -119,11 +127,16 @@ const StyledEmailReceipt = styled.div`
 
   .heading {
     /* border: 1px solid magenta; */
-    height: ${theme.size.l};
+    /* height: ${theme.size.l}; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: ${theme.size.m};
+    padding-top: ${theme.size.m};
+    margin-bottom: ${theme.size.l};
+
+    @media (max-width: ${theme.breakpoint.first}) {
+      margin-bottom: ${theme.size.m};
+    }   
 
     &__text {
       font-weight: 700;
@@ -306,7 +319,10 @@ const StyledEmailReceipt = styled.div`
     top: ${theme.em(28)};
     right: ${theme.em(40)};
 
-    
+    @media (max-width: ${theme.breakpoint.first}) {
+      top: 4%;
+      right: 8%;
+    }
   }
 
   .design-circle-fill {
@@ -450,13 +466,35 @@ const EmailReceipt = () => {
               </div>
             </div>
 
+            <div className="product-box">
+              <div className="product">
+                <img
+                  className="product__image"
+                  src="/static/017-email-receipt/product-03.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <span className="text">Galaxy Earrings — $549</span>
+              </div>
+
+              <div>
+                <span className="text">x 02</span>
+              </div>
+
+              <div>
+                <span className="text">$1098</span>
+              </div>
+            </div>
+
             <div className="total-box">
               <div>
                 <span className="text">Total</span>
               </div>
 
               <div>
-                <span className="text">$2046</span>
+                <span className="text">$3144</span>
               </div>
             </div>
 
