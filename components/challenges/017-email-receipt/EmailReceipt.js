@@ -26,6 +26,7 @@ const PageStyle = createGlobalStyle`
   html {
     width: 100%;
     height: 100%;
+    font-size: 16px;
   }
 
   body {
@@ -36,14 +37,15 @@ const PageStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
   }
 `;
 
 const StyledEmailReceipt = styled.div`
   /* border: 1px solid cyan; */
+  margin-bottom: ${theme.em(110)};
   width: ${theme.em(464)};
   position: relative;
+  font-size: 1.2rem;
 
   .container {
     /* border: 1px solid magenta; */
@@ -101,6 +103,10 @@ const StyledEmailReceipt = styled.div`
     height: ${theme.size.l};
     display: flex;
     align-items: flex-end;
+
+    &--right {
+      justify-content: flex-end;
+    }
   }
 
   .text {
@@ -110,6 +116,10 @@ const StyledEmailReceipt = styled.div`
 
     &--data {
       letter-spacing: 0.08em;
+    }
+
+    &--bold {
+      font-weight: 700;
     }
   }
 
@@ -124,6 +134,62 @@ const StyledEmailReceipt = styled.div`
     }
   }
 
+  .product-box {
+    display: grid;
+    grid-template-columns: auto 4fr 1fr 1fr;
+    grid-column-gap: ${theme.size.m};
+    justify-items: start;
+    margin-bottom: ${theme.size.m};
+  }
+
+  .product {
+    width: ${theme.size.xl};
+    height: ${theme.size.xl};
+    border: ${theme.em(1)} solid ${theme.color.white};
+    border-radius: 1000em;
+    overflow: hidden;
+
+    &__image {
+      /* border: 1px solid magenta; */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .total-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: ${theme.size.m};
+
+    div:first-child {
+      margin-right: ${theme.size.m};
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: ${theme.em(1)};
+    background-color: ${theme.color.dark};
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button {
+    margin-top: ${theme.size.m};
+    background-color: ${theme.color.primary};
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1000em;
+    color: ${theme.color.white};
+    padding: ${theme.size.s} ${theme.size.m};
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
   .design-outline {
     position: absolute;
     top: ${theme.size.m};
@@ -133,6 +199,7 @@ const StyledEmailReceipt = styled.div`
     border: ${theme.em(2)} solid ${theme.color.white};
     transform: skewY(12deg);
     transform-origin: top left;
+    pointer-events: none;
   }
 
   .design-back-plate {
@@ -240,15 +307,13 @@ const EmailReceipt = () => {
           <span className="heading__text">Thank you for your purchase</span>
         </div>
 
-        {/* <div className="product-box">
-          <div>
-            <div className="product">
-              <img
-                className="product__image"
-                src="/static/017-email-receipt/product-01.jpg"
-                alt=""
-              />
-            </div>
+        <div className="product-box">
+          <div className="product">
+            <img
+              className="product__image"
+              src="/static/017-email-receipt/product-01.jpg"
+              alt=""
+            />
           </div>
 
           <div>
@@ -286,7 +351,7 @@ const EmailReceipt = () => {
           <div>
             <span className="text">$1347</span>
           </div>
-        </div> */}
+        </div>
 
         <div className="total-box">
           <div>
@@ -294,20 +359,22 @@ const EmailReceipt = () => {
           </div>
 
           <div>
-            <span className="text text--bold">01/26/19</span>
+            <span className="text text">$2046</span>
           </div>
         </div>
 
         <div className="divider" />
 
-        <div className="text-box">
+        <div className="text-box text-box--right">
           <span className="text">
             Your estimated delivery date is{" "}
             <span className="text text--bold">01/26/19</span>{" "}
           </span>
         </div>
 
-        <button className="button">Track your order</button>
+        <div className="button-box">
+          <button className="button">Track your order</button>
+        </div>
       </div>
 
       <div className="design-outline" />

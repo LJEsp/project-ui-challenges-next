@@ -67,7 +67,7 @@ const index = () => {
 
       <nav>
         {links.map((link, index) => (
-          <div>
+          <div key={index}>
             <span>Day {index + 1}</span>
 
             <Link key={link.href} href={link.href}>
