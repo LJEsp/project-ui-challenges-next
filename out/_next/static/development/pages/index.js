@@ -13755,38 +13755,22 @@ var index = function index() {
       lineNumber: 204
     },
     __self: this
-  }, "UI Challenges | LJEsp"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
+  }, "UI Challenges | LJEsp")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageStyle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    href: "https://fonts.googleapis.com/css?family=Montserrat:400,700",
-    rel: "stylesheet",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 206
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageStyle, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 212
+      lineNumber: 207
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216
+      lineNumber: 211
     },
     __self: this
   }, "UI Challenges"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218
+      lineNumber: 213
     },
     __self: this
   }, links.map(function (link, index) {
@@ -13794,22 +13778,23 @@ var index = function index() {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 220
+        lineNumber: 215
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "day",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 221
+        lineNumber: 216
       },
       __self: this
     }, link.day), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      prefetch: true,
       key: link.href,
       href: link.href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 223
+        lineNumber: 218
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -13817,20 +13802,20 @@ var index = function index() {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 224
+        lineNumber: 219
       },
       __self: this
     }, link.challenge, " ", link.title ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 226
+        lineNumber: 221
       },
       __self: this
     }, "\u2014 \"", link.title, "\"") : null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "date",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 230
+        lineNumber: 225
       },
       __self: this
     }, link.date));

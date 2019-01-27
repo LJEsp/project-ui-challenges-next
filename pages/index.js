@@ -202,11 +202,6 @@ const index = () => {
     <StyledWrapper>
       <Head>
         <title>UI Challenges | LJEsp</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-          rel="stylesheet"
-        />
       </Head>
 
       <PageStyle />
@@ -220,7 +215,7 @@ const index = () => {
           <div key={index}>
             <span className="day">{link.day}</span>
 
-            <Link key={link.href} href={link.href}>
+            <Link prefetch key={link.href} href={link.href}>
               <a className="link" target="_blank">
                 {link.challenge}{" "}
                 {link.title ? <span>&mdash; "{link.title}"</span> : null}
