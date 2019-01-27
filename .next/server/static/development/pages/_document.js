@@ -189,38 +189,91 @@ function (_Document) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        href: "https://fonts.googleapis.com/css?family=Montserrat:400,700",
-        rel: "stylesheet",
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/static/apple-touch-icon.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
-        rel: "stylesheet",
-        type: "text/css",
-        href: "/static/nprogress.css",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/static/favicon-32x32.png",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41
         },
         __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/static/favicon-16x16.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+        rel: "manifest",
+        href: "/site.webmanifest",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        name: "msapplication-TileColor",
+        content: "#da532c",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        name: "theme-color",
+        content: "#ffffff",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+        href: "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+        rel: "stylesheet",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "/static/css/nprogress.css",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 74
         },
         __self: this
       })));
