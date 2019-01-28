@@ -9,13 +9,14 @@
     "netlify-build": "npm run build && npm run export"
   },
   "dependencies": {
+    "chart.js": "^2.7.3",
     "next": "^7.0.2",
     "nprogress": "^0.2.0",
     "react": "^16.7.0",
+    "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.7.0",
     "react-spring": "^7.2.10",
-    "styled-components": "^4.0.0",
-    "styled-reset": "^1.6.5"
+    "styled-components": "^4.0.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"

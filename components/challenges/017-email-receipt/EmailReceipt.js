@@ -60,7 +60,7 @@ const StyledEmailReceipt = styled.div`
   margin-bottom: ${theme.em(110)};
   max-width: ${theme.em(464)};
   position: relative;
-  font-size: 1.1875rem;
+  font-size: 1rem;
 
   @media (max-width: ${theme.breakpoint.first}) {
     font-size: 0.9375em;

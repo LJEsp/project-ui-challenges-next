@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import EmailReceipt from "../../../components/challenges/017-email-receipt/EmailReceipt";
+import AnalyticsChart from "../../components/challenges/018-analytics-chart/AnalyticsChart";
 import Head from "next/head";
 
 export class index extends Component {
@@ -7,10 +7,10 @@ export class index extends Component {
     return (
       <Fragment>
         <Head>
-          <title>Email Receipt — UI Challenges | LJEsp</title>
+          <title>Analytics Chart — UI Challenges | LJEsp</title>
         </Head>
 
-        <EmailReceipt />
+        <AnalyticsChart />
       </Fragment>
     );
   }
