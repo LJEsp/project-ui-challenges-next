@@ -90,7 +90,8 @@ I've subscribed to the daily UI challenges from http://www.dailyui.co/ to improv
 
 ## Technologies / Tools
 ### React
-  * create-react-app
+  * create-react-app (Day 1-16)
+  * Next.js
   * react-router-dom — *routing*
   * styled-components — *styling*
   * react-spring — *animation*
