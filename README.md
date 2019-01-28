@@ -99,6 +99,8 @@ I've subscribed to the daily UI challenges from http://www.dailyui.co/ to improv
   
 ### Figma
 
+### Netlify
+
 
 ## Resources
 ### [Unsplash](https://unsplash.com/) — stock photos
