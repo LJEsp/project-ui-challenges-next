@@ -11,11 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/018-analytics-chart": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/018-analytics-chart": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

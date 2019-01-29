@@ -61,8 +61,13 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+          />
+
           {/* >>> Import CSS for nprogress */}
-          
+
           <link
             rel="stylesheet"
             type="text/css"
