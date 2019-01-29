@@ -272,9 +272,10 @@ const StyledAnalyticsChart = styled.div`
   .section-2-container {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto 1fr;
     border-right: 1px solid ${theme.color.grey.light};
     margin-right: ${theme.size.l};
+    padding-right: ${theme.size.l};
 
     > * {
       grid-column: 1 / 2;
@@ -290,7 +291,7 @@ const StyledAnalyticsChart = styled.div`
     
     > *:last-child {
       grid-column: 2 / -1;
-      grid-row: 3 / -1;
+      grid-row: 1 / -1;
     }
   }
 
