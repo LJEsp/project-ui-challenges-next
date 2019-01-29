@@ -77,5 +77,7 @@ module.exports = {
       // borderWidth: 2
     }
   },
-  responsive: true
+  responsive: true,
+  aspectRatio: 1, // This value makes the animation buggy
+  maintainAspectRatio: false
 };

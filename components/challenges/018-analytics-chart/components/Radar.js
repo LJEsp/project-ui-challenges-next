@@ -45,7 +45,9 @@ const data = {
   ]
 };
 const Radar = () => {
-  return <ChartRadar data={data} options={chartOptions} />;
+  return <ChartRadar 
+  height={null} width={null} 
+  data={data} options={chartOptions} />;
 };
 
 export default Radar;

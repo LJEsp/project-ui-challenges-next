@@ -19,8 +19,8 @@ defaults.global.defaultFontFamily = "Montserrat, sans-serif";
 // defaults.global.elements.arc.borderColor = "#0000ff";
 // defaults.global.elements.arc.borderWidth = 2;
 
-defaults.doughnut.animation.animateRotate = true;
-defaults.doughnut.animation.animateScale = true;
+// defaults.doughnut.animation.animateRotate = false;
+// defaults.doughnut.animation.animateScale = true;
 
 const PageStyle = createGlobalStyle`
   ${destyle}
@@ -40,35 +40,44 @@ const PageStyle = createGlobalStyle`
     font-weight: 700;
   }
 
-  .myChartDiv canvas {
-    width: 100%;
-  }
 `;
 
 const StyledAnalyticsChart = styled.div`
   /* border: 1px solid cyan; */
+  width: 100%;
+  overflow-x: hidden;
   padding: 1.5em;
 
   .row {
     display: flex;
+    flex-flow: row wrap;
     margin-bottom: 1.5em;
 
     > * {
       width: 50%;
+
+      @media (max-width: 52.4375em) {
+        width: 100%;
+      }
     }
   }
 
   .chart-container {
+    /* border: 1px solid magenta; */
     text-align: center;
-    /* display: flex;
-    flex-flow: column; */
-    /* margin-bottom: 1.5em; */
+
+    display: flex;
+    flex-flow: column;
+
+    @media (max-width: 52.4375em) {
+      height: 100%;
+      margin-bottom: 1em;
+    }
   }
 
   .chart-box {
-    /* flex-grow: 1; */
     /* border: 1px solid magenta; */
-    /* height: 16em; */
+    flex-grow: 1;
   }
 `;
 

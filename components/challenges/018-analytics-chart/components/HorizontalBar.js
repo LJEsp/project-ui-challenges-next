@@ -37,7 +37,9 @@ const data = {
 };
 
 const HorizontalBar = () => {
-  return <ChartHorizontalBar data={data} options={chartOptions} />;
+  return <ChartHorizontalBar 
+  height={null} width={null} 
+  data={data} options={chartOptions} />;
 };
 
 export default HorizontalBar;

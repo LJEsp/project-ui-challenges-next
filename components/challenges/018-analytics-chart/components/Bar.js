@@ -37,7 +37,13 @@ const data = {
 };
 
 const Bar = () => {
-  return <ChartBar data={data} options={chartOptions} />;
+  return (
+    <ChartBar
+      height={null} width={null}
+      data={data}
+      options={chartOptions}
+    />
+  );
 };
 
 export default Bar;

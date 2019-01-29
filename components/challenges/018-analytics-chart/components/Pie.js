@@ -10,7 +10,7 @@ const data = {
       data: [1, 2, 3],
       backgroundColor: theme.backgroundColor,
       hoverBackgroundColor: theme.hoverBackgroundColor,
-      hoverBorderColor: theme.hoverBorderColor,
+      hoverBorderColor: theme.hoverBorderColor
       // hoverBorderWidth: [4, 4, 4]
     }
   ],
@@ -20,7 +20,13 @@ const data = {
 };
 
 const Pie = () => {
-  return <ChartPie data={data} options={chartOptions} />;
+  return (
+    <ChartPie
+      height={null} width={null}
+      data={data}
+      options={chartOptions}
+    />
+  );
 };
 
 export default Pie;

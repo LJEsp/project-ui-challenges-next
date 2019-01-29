@@ -73,7 +73,11 @@ const data = {
 };
 
 const Line = () => {
-  return <ChartLine data={data} options={chartOptions} />;
+  return (
+    <ChartLine 
+    height={null} width={null} 
+    data={data} options={chartOptions} />
+  );
 };
 
 export default Line;
