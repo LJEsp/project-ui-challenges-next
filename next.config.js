@@ -12,7 +12,6 @@ module.exports = {
     if (dev) {
       return defaultPathMap;
     }
-    // This will copy robots.txt from your project root into the out directory
     await copyFile(join(dir, "_redirects"), join(outDir, "_redirects"));
     return defaultPathMap;
   }

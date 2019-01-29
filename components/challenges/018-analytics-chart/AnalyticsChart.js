@@ -93,8 +93,17 @@ const StyledAnalyticsChart = styled.div`
     color: ${theme.color.grey.light};
     padding: ${theme.size.s};
 
+    &:hover {
+      color: ${theme.color.light};
+    }
+
     &--dark {
       color: ${theme.color.grey.dark};
+
+      
+      &:hover {
+        color: ${theme.color.primary};
+      }
     }
 
     &--active {
@@ -108,6 +117,10 @@ const StyledAnalyticsChart = styled.div`
     padding: ${theme.size.s} ${theme.size.m};
     border-radius: ${theme.size.xs};
     color: ${theme.color.light};
+
+    &:hover {
+      background-color: ${theme.color.grey.dark};
+    }
   }
 
   .avatar {
@@ -175,6 +188,7 @@ const StyledAnalyticsChart = styled.div`
     border: 1px solid ${theme.color.primary};
     border-radius: ${theme.size.s};
     text-transform: uppercase;
+
   }
 
   .main-nav-container {
@@ -207,6 +221,7 @@ const StyledAnalyticsChart = styled.div`
     display: grid;
     grid-template-columns: 33.333333% 1fr;
     border-bottom: 1px solid ${theme.color.grey.light};
+    padding-bottom: ${theme.size.l};
 
     > *:first-child {
       margin-right: ${theme.size.m};
